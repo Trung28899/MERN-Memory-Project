@@ -22,3 +22,5 @@ b. Packages used:
         +, $ npm install body-parser cors expres mongoose nodemon
 
 2. Setting Up Backend Connections: 
+    - Code in 3rd Commit
+    - Basic settings for every MERN stack app in ./server/index.js
