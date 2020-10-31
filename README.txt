@@ -24,3 +24,11 @@ b. Packages used:
 2. Setting Up Backend Connections: 
     - Code in 3rd Commit
     - Basic settings for every MERN stack app in ./server/index.js
+
+3. Setting Server Models and Controllers
+    - Code in 4th Commit
+    - See server/controllers and server/models
+    - Status code reference: 
+    https://www.restapitutorial.com/httpstatuscodes.html
+
+    example: ./controllers/posts.js in res.status()

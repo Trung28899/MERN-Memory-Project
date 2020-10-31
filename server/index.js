@@ -2,18 +2,16 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const postRoute = require("./routes/posts");
 
 const app = express();
 
-/*
-    Setting up body parser and cors
-    Setting limit because will send some image
-*/
+app.use("/posts", postRoute);
+
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
-// get from mongodb
 const CONNECTION_URL =
   "mongodb+srv://trevor:trevortrinh@cluster0.px6on.mongodb.net/<dbname>?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
