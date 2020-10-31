@@ -16,6 +16,8 @@ b. Packages used:
     - In Client: 
         +, $ npx create-react-app ./
         +, $ npm install axios moment react-file-base64 redux redux-thunk
+        +, $ npm install @material-ui/core
+        +, $ npm install react-redux
 
     - In Server: 
         +, $ npm init -y
@@ -32,3 +34,8 @@ b. Packages used:
     https://www.restapitutorial.com/httpstatuscodes.html
 
     example: ./controllers/posts.js in res.status()
+
+4. Setting up redux and working on Components: 
+    - Code in 5th Commit
+    - See ./client/src/index.js, .client/src/reducers to see how to set it up
+    - See ./client/src/Components for post and form components
