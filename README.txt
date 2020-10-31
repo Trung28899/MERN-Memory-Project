@@ -44,3 +44,8 @@ b. Packages used:
         +, See App.js in useEffect() for setting up
         +, See ./components/Posts/Posts.js under useSelector()
             for how to get information from redux
+
+5. Working on form: 
+    - Code in 7th Commit
+    - See ./components/Form/Form.js 
+    
