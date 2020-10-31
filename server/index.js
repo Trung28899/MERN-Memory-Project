@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use("/posts", postRoute);
 
 const CONNECTION_URL =
-  "mongodb+srv://trevor:trevortrinh@cluster0.px6on.mongodb.net/<dbname>?retryWrites=true&w=majority";
+  "mongodb+srv://trevor:trevortrinh@cluster0.px6on.mongodb.net/memories";
 const PORT = process.env.PORT || 5000;
 
 mongoose

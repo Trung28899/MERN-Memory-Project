@@ -48,4 +48,14 @@ b. Packages used:
 5. Working on form: 
     - Code in 7th Commit
     - See ./components/Form/Form.js 
-    
+
+6. Sending a Post to the backend and database: 
+    - Code in 8th Commit
+    - See handleSubmit() in components/Form/Form.js
+
+    > Application now can send a post to the backend to create
+    a post in database
+    > Also able to retrieve all the posts from db in front-end
+    but not rendering it right now
+
+    C,R is done in CRUD of this app
