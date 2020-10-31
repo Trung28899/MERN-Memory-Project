@@ -36,6 +36,11 @@ b. Packages used:
     example: ./controllers/posts.js in res.status()
 
 4. Setting up redux and working on Components: 
-    - Code in 5th Commit
+    - Code in 6th Commit
     - See ./client/src/index.js, .client/src/reducers to see how to set it up
     - See ./client/src/Components for post and form components
+
+    - Using redux with react hooks: 
+        +, See App.js in useEffect() for setting up
+        +, See ./components/Posts/Posts.js under useSelector()
+            for how to get information from redux

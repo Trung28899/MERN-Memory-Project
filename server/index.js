@@ -6,11 +6,11 @@ const postRoute = require("./routes/posts");
 
 const app = express();
 
-app.use("/posts", postRoute);
-
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
-app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
+app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
+
+app.use("/posts", postRoute);
 
 const CONNECTION_URL =
   "mongodb+srv://trevor:trevortrinh@cluster0.px6on.mongodb.net/<dbname>?retryWrites=true&w=majority";
