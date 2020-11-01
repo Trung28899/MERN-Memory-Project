@@ -1,5 +1,17 @@
     THIS IS THE TUTORIAL APP FOR HOW TO BUILD MERN STACK APPLICATIONS
 
+    NOTE: bugs should be watched out (if not fixed in certain commit): 
+        - In ./server/controllers/posts.js: under createPost should have
+            const newPost = new PostMessage(post);
+        - If there is any compiling errors, check for package.json of 
+            server, make sure "type": "module" is not there
+            also make sure we don't have import statement and 
+            export const variable on server files
+        - In ./server/index.js, have to put 
+            app.use(cors());
+        before app.use("/posts", postRoute);
+        or any other route handling
+
 1. Setting up basic folder structure: 
     - This is the basic folder structure for every MERN stack app
     - Code in 1st Commit
@@ -21,7 +33,7 @@ b. Packages used:
 
     - In Server: 
         +, $ npm init -y
-        +, $ npm install body-parser cors expres mongoose nodemon
+        +, $ npm install body-parser cors express mongoose nodemon
 
 2. Setting Up Backend Connections: 
     - Code in 3rd Commit
