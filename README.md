@@ -104,3 +104,11 @@ b. Packages used:
      (track it down to reducers and action files)
    - See delete process from back-end in /controllers/posts.js: under
      deletePost()
+
+10. Like Post Functionality
+
+- Code in 13rd Commit
+- See like post process from front-end in: /components/Posts/Post/Post.js
+  (track it down to reducers and action files)
+- See delete process from back-end in /controllers/posts.js: under
+  likePost()
