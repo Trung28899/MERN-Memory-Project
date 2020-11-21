@@ -25,12 +25,14 @@ development - Basic code that will allow front-end to start running
 on localhost:3000 > type npm start in client folder
 and go to localhost:3000 - Note: see package.json in both ./client and ./server for info
 
-b. Packages used: - In Client:
-+, $ npx create-react-app ./
+b. Packages used:
+
+    - In Client:
+        +, $ npx create-react-app
         +, $ npm install axios moment react-file-base64 redux redux-thunk
-+, $ npm install @material-ui/core
-        +, $ npm install --force @material-ui/core
-+, \$ npm install react-redux
+        +, $ npm install @material-ui/core
+        +, $ npm install --force @material-ui/icons
+        +, $ npm install react-redux
 
     - In Server:
         +, $ npm init -y
@@ -83,3 +85,14 @@ b. Packages used: - In Client:
    C,R is done in CRUD of this app
 
    Background: https://www.svgbackgrounds.com/
+
+8. Updating Functionality
+
+   - Code in 11st Commit
+   - See update process from front-end in: /components/Posts/Post/Post.js, /components/Form/Form.js (track it down to reducers and action files)
+   - See update process from back-end in: /controllers/posts.js: under
+     updatePost()
+   - Now the user can click the 3 dots in a post, info will be bring into
+     the form for updating > hit submit to update
+
+   C,R,U is done at this point

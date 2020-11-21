@@ -25,27 +25,27 @@ const Form = ({ currentId, setCurrentId }) => {
   }, [post]);
 
   const clear = () => {
-    // setCurrentId(0);
-    // setPostData({
-    //   creator: "",
-    //   title: "",
-    //   message: "",
-    //   tags: "",
-    //   selectedFile: "",
-    // });
+    setCurrentId(0);
+    setPostData({
+      creator: "",
+      title: "",
+      message: "",
+      tags: "",
+      selectedFile: "",
+    });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    dispatch(createPost(postData));
+    // dispatch(createPost(postData));
 
-    // if (currentId === 0) {
-    //   dispatch(createPost(postData));
-    //   clear();
-    // } else {
-    //   dispatch(updatePost(currentId, postData));
-    //   clear();
-    // }
+    if (currentId === 0) {
+      dispatch(createPost(postData));
+      clear();
+    } else {
+      dispatch(updatePost(currentId, postData));
+      clear();
+    }
   };
   return (
     <Paper className={classes.paper}>
@@ -55,7 +55,9 @@ const Form = ({ currentId, setCurrentId }) => {
         className={`${classes.root} ${classes.form}`}
         onSubmit={handleSubmit}
       >
-        <Typography variant="h6">Creating a memory</Typography>
+        <Typography variant="h6">
+          {currentId ? "Editing" : "Creating"} a memory
+        </Typography>
         <TextField
           name="creator"
           variant="outlined"
