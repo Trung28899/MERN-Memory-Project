@@ -96,3 +96,11 @@ b. Packages used:
      the form for updating > hit submit to update
 
    C,R,U is done at this point
+
+9. Deleting Functionality
+
+   - Code in 12nd Commit
+   - See delete process from front-end in: /components/Posts/Post/Post.js
+     (track it down to reducers and action files)
+   - See delete process from back-end in /controllers/posts.js: under
+     deletePost()
