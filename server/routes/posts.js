@@ -5,6 +5,10 @@ const router = express.Router();
 
 router.get("/", postController.getPosts);
 router.post("/", postController.createPost);
+/*
+    patch is used for updating existing document
+*/
+router.patch("/:id", postController.updatePost);
 
 // router.get("/", getPosts);
 // router.post("/", createPost);
